@@ -740,30 +740,71 @@
             }
         }
 
+        /* Mobile Header Optimization */
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu span {
+            width: 24px;
+            height: 3px;
+            background: #1A2B4C;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-header-cta {
+            display: none;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 0 20px;
             }
 
             .header-content {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
             }
 
             .logo-section {
-                flex-direction: column;
-                gap: 8px;
-            }
-
-            .header-cta {
-                flex-direction: column;
+                flex-direction: row;
+                align-items: center;
                 gap: 10px;
             }
 
-            .trust-badge {
-                font-size: 0.8rem;
-                padding: 6px 12px;
+            .brand-tagline {
+                display: none;
+            }
+
+            .header-cta {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .mobile-header-cta {
+                display: block;
+                background: #00A99D;
+                color: white;
+                padding: 8px 16px;
+                text-decoration: none;
+                border-radius: 20px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+
+            .mobile-header-cta:hover {
+                background: #008B82;
             }
 
             .hero {
@@ -855,12 +896,20 @@
             <div class="header-content">
                 <div class="logo-section">
                     <div class="logo">AI個別レクチャー</div>
-                    <div class="brand-tagline">セラピスト・医療従事者専門<br>志水康太による個別指導</div>
+                    <div class="brand-tagline">セラピスト・医療従事者専門<br>合同会社ICHI. 志水康太による個別指導</div>
                 </div>
                 <div class="header-cta">
                     <div class="trust-badge">満足度100%</div>
                     <div class="trust-badge">限定10名</div>
                     <a href="https://lin.ee/8CYKNAj" class="header-button" target="_blank">無料相談申込</a>
+                </div>
+                
+                <!-- Mobile Header Elements -->
+                <a href="https://lin.ee/8CYKNAj" class="mobile-header-cta" target="_blank">申込</a>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -1129,7 +1178,8 @@
                 <div class="footer-section">
                     <h4>AI個別レクチャー</h4>
                     <p>セラピスト・医療従事者の皆様の業務効率化を支援するAI活用個別レクチャーサービスです。</p>
-                    <p><strong>運営者：志水康太</strong></p>
+                    <p><strong>運営会社：合同会社ICHI.</strong></p>
+                    <p><strong>代表：志水康太</strong></p>
                     <p>お問い合わせ：<a href="https://lin.ee/8CYKNAj" target="_blank" style="color: #00A99D;">LINE</a></p>
                 </div>
                 
@@ -1153,7 +1203,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 志水康太 - AI個別レクチャー. All rights reserved.</p>
+                <p>&copy; 2024 合同会社ICHI. - AI個別レクチャー. All rights reserved.</p>
             </div>
         </div>
     </footer>
