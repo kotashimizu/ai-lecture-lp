@@ -670,6 +670,63 @@
             margin-top: 30px;
         }
 
+        /* Site Footer */
+        .site-footer {
+            background: #1A2B4C;
+            color: white;
+            padding: 40px 0 20px 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            color: #00A99D;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-section p {
+            line-height: 1.6;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #00A99D;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2C3E50;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
         /* Responsive Design */
         @media (max-width: 1024px) {
             .content-grid {
@@ -748,6 +805,12 @@
 
             .footer-message {
                 padding: 60px 0;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
             }
 
             .logo {
@@ -1058,5 +1121,41 @@
             </div>
         </div>
     </section>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI個別レクチャー</h4>
+                    <p>セラピスト・医療従事者の皆様の業務効率化を支援するAI活用個別レクチャーサービスです。</p>
+                    <p><strong>運営者：志水康太</strong></p>
+                    <p>お問い合わせ：<a href="https://lin.ee/8CYKNAj" target="_blank" style="color: #00A99D;">LINE</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>サービス情報</h4>
+                    <ul class="footer-links">
+                        <li><a href="#apply">お申込み</a></li>
+                        <li><a href="https://lin.ee/8CYKNAj" target="_blank">お問い合わせ</a></li>
+                        <li><a href="docs/DEPLOYMENT.md">よくある質問</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>法的事項</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+                        <li><a href="tokusho.html">特定商取引法に基づく表記</a></li>
+                        <li><a href="terms.html">利用規約</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 志水康太 - AI個別レクチャー. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
